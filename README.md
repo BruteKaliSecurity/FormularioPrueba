@@ -23,10 +23,6 @@ npx http-server -p 8000
 
 Luego abre: `http://localhost:8000`
 
-## 📧 Configuración del correo
-
-El formulario está configurado para enviar correos a: **escritorioremotox2@gmail.com**
-
 ## 🌐 Desplegar en GitHub Pages
 
 ### Paso 1: Crear el repositorio en GitHub
